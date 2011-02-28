@@ -9,9 +9,10 @@
 
 using System;
 using System.Collections.Generic;
-using ID3TagLib;
 using System.IO;
-
+using ID3TagLib;
+using Microsoft.Win32;
+using System.Diagnostics;
 
 
 namespace BPRename
@@ -27,13 +28,14 @@ namespace BPRename
         [STAThread]
         static void Main(string[] args)
         {
-            //Exit if no args
-            if (args.Length==0||!File.Exists(args[0])||Path.GetExtension(args[0])!="mp3")
-            {
+            
+            
+            //Exit if invalid file
+            if ((args.Length == 0)||File.Exists(args[0])==false||Path.GetExtension(args[0])!=".mp3")
+            {  
                 return;
             }
-
-            
+                      
 
             string raw_artist;
             string raw_title;
@@ -54,7 +56,6 @@ namespace BPRename
 
             //Rename File
             File.Move(src_name, target_name);
-
                
         }
 
