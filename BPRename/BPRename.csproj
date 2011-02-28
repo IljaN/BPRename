@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FB201079-263A-4351-9770-680FD6EDE523}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BPRename</RootNamespace>
+    <AssemblyName>BPRename</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ID3TagLib\converter\FrameDecoder.cs" />
+    <Compile Include="ID3TagLib\converter\FrameEncoder.cs" />
+    <Compile Include="ID3TagLib\converter\ID3v1TagDecoder.cs" />
+    <Compile Include="ID3TagLib\converter\ID3v1TagEncoder.cs" />
+    <Compile Include="ID3TagLib\converter\ID3v2TagDecoder.cs" />
+    <Compile Include="ID3TagLib\converter\ID3v2TagEncoder.cs" />
+    <Compile Include="ID3TagLib\converter\NumberConverter.cs" />
+    <Compile Include="ID3TagLib\converter\StringDecoder.cs" />
+    <Compile Include="ID3TagLib\converter\StringEncoder.cs" />
+    <Compile Include="ID3TagLib\core\ExtendedHeader.cs" />
+    <Compile Include="ID3TagLib\core\ExtendedHeaderFlags.cs" />
+    <Compile Include="ID3TagLib\core\Frame.cs" />
+    <Compile Include="ID3TagLib\core\FrameCollection.cs" />
+    <Compile Include="ID3TagLib\core\FrameFactory.cs" />
+    <Compile Include="ID3TagLib\core\FrameFlags.cs" />
+    <Compile Include="ID3TagLib\core\ID3File.cs" />
+    <Compile Include="ID3TagLib\core\ID3v1Genre.cs" />
+    <Compile Include="ID3TagLib\core\ID3v1Tag.cs" />
+    <Compile Include="ID3TagLib\core\ID3v2Tag.cs" />
+    <Compile Include="ID3TagLib\core\ID3v2TagFlags.cs" />
+    <Compile Include="ID3TagLib\core\ID3v2Version.cs" />
+    <Compile Include="ID3TagLib\core\ImageEncodingRestriction.cs" />
+    <Compile Include="ID3TagLib\core\ImageSizeRestriction.cs" />
+    <Compile Include="ID3TagLib\core\PaddingMode.cs" />
+    <Compile Include="ID3TagLib\core\ReadMode.cs" />
+    <Compile Include="ID3TagLib\core\TagSizeRestriction.cs" />
+    <Compile Include="ID3TagLib\core\TextEncodingRestriction.cs" />
+    <Compile Include="ID3TagLib\core\TextFieldSizeRestriction.cs" />
+    <Compile Include="ID3TagLib\exceptions\ID3CrcMismatchException.cs" />
+    <Compile Include="ID3TagLib\exceptions\ID3InvalidFrameIdentifierException.cs" />
+    <Compile Include="ID3TagLib\exceptions\ID3MalformedTimestampException.cs" />
+    <Compile Include="ID3TagLib\exceptions\ID3ParseException.cs" />
+    <Compile Include="ID3TagLib\exceptions\ID3TagException.cs" />
+    <Compile Include="ID3TagLib\exceptions\ID3UnsyncException.cs" />
+    <Compile Include="ID3TagLib\frames\AudioEncryptionFrame.cs" />
+    <Compile Include="ID3TagLib\frames\BinaryFrame.cs" />
+    <Compile Include="ID3TagLib\frames\ChapterFrame.cs" />
+    <Compile Include="ID3TagLib\frames\CommentAndLyricsFrame.cs" />
+    <Compile Include="ID3TagLib\frames\CommercialFrame.cs" />
+    <Compile Include="ID3TagLib\frames\ContentType.cs" />
+    <Compile Include="ID3TagLib\frames\DataFrame.cs" />
+    <Compile Include="ID3TagLib\frames\EncapsulatedObjectFrame.cs" />
+    <Compile Include="ID3TagLib\frames\EventCollection.cs" />
+    <Compile Include="ID3TagLib\frames\EventEntry.cs" />
+    <Compile Include="ID3TagLib\frames\EventTimingFrame.cs" />
+    <Compile Include="ID3TagLib\frames\ISelectableLanguage.cs" />
+    <Compile Include="ID3TagLib\frames\ISelectableTextEncoding.cs" />
+    <Compile Include="ID3TagLib\frames\LinkedInformationFrame.cs" />
+    <Compile Include="ID3TagLib\frames\MultiStringTextFrame.cs" />
+    <Compile Include="ID3TagLib\frames\NumericTextFrame.cs" />
+    <Compile Include="ID3TagLib\frames\OwnershipFrame.cs" />
+    <Compile Include="ID3TagLib\frames\PictureFrame.cs" />
+    <Compile Include="ID3TagLib\frames\PictureType.cs" />
+    <Compile Include="ID3TagLib\frames\PlayCounterFrame.cs" />
+    <Compile Include="ID3TagLib\frames\PopularimeterFrame.cs" />
+    <Compile Include="ID3TagLib\frames\PositionSynchronizationFrame.cs" />
+    <Compile Include="ID3TagLib\frames\ReceivedType.cs" />
+    <Compile Include="ID3TagLib\frames\ReverbFrame.cs" />
+    <Compile Include="ID3TagLib\frames\SeekFrame.cs" />
+    <Compile Include="ID3TagLib\frames\SignatureFrame.cs" />
+    <Compile Include="ID3TagLib\frames\StringCollection.cs" />
+    <Compile Include="ID3TagLib\frames\SyllableCollection.cs" />
+    <Compile Include="ID3TagLib\frames\SyllableEntry.cs" />
+    <Compile Include="ID3TagLib\frames\SymbolRegistrationFrame.cs" />
+    <Compile Include="ID3TagLib\frames\SynchronizedLyricsFrame.cs" />
+    <Compile Include="ID3TagLib\frames\TableOfContentsFrame.cs" />
+    <Compile Include="ID3TagLib\frames\TermsOfUseFrame.cs" />
+    <Compile Include="ID3TagLib\frames\TextEncoding.cs" />
+    <Compile Include="ID3TagLib\frames\TextFrame.cs" />
+    <Compile Include="ID3TagLib\frames\TimestampFormat.cs" />
+    <Compile Include="ID3TagLib\frames\TimestampPrecision.cs" />
+    <Compile Include="ID3TagLib\frames\TimestampTextFrame.cs" />
+    <Compile Include="ID3TagLib\frames\UserDefinedTextFrame.cs" />
+    <Compile Include="ID3TagLib\util\Crc32.cs" />
+    <Compile Include="ID3TagLib\util\FrameUtil.cs" />
+    <Compile Include="ID3TagLib\util\UnsyncFilterStream.cs" />
+    <Compile Include="ID3TagLib\util\Util.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

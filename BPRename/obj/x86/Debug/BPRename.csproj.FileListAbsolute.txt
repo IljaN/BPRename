@@ -1,0 +1,8 @@
+C:\Users\Ilja\documents\visual studio 2010\Projects\TagToFilename\BPRename\bin\Debug\BPRename.exe
+C:\Users\Ilja\documents\visual studio 2010\Projects\TagToFilename\BPRename\bin\Debug\BPRename.pdb
+C:\Users\Ilja\documents\visual studio 2010\Projects\TagToFilename\BPRename\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ilja\documents\visual studio 2010\Projects\TagToFilename\BPRename\obj\x86\Debug\BPRename.Properties.Resources.resources
+C:\Users\Ilja\documents\visual studio 2010\Projects\TagToFilename\BPRename\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Ilja\documents\visual studio 2010\Projects\TagToFilename\BPRename\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Ilja\documents\visual studio 2010\Projects\TagToFilename\BPRename\obj\x86\Debug\BPRename.exe
+C:\Users\Ilja\documents\visual studio 2010\Projects\TagToFilename\BPRename\obj\x86\Debug\BPRename.pdb
