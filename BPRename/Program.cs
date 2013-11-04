@@ -28,8 +28,6 @@ namespace BPRename
         [STAThread]
         static void Main(string[] args)
         {
-            
-            
             //Exit if invalid file
             if ((args.Length == 0)||File.Exists(args[0])==false||Path.GetExtension(args[0])!=".mp3")
             {  
